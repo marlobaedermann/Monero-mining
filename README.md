@@ -14,4 +14,4 @@ cmake
 
 make
 
-./xmrig -o gulf.moneroocean.stream:10128 -u [Walletadresse] -p [NamedesMiners]
+./xmrig -o gulf.moneroocean.stream:10128 -u [Walletadresse(44t42kr2Zd3CUKuWszi1A3GxLtfZpm39NexjE4wBdM8YTaHL5mTJYxf1R9bfyvLZwLirCfDTTZ2oXWwuhrxxn86a2vVGNun)] -p [NamedesMiners]
