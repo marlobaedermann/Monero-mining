@@ -1,1 +1,23 @@
+sudo apt update
+2️⃣ Benötigte Pakete installieren
+sudo apt install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
+3️⃣ XMRig herunterladen
+git clone https://github.com/xmrig/xmrig.git
+4️⃣ Build-Verzeichnis erstellen
+cd xmrig
+mkdir build
+cd build
+5️⃣ Kompilieren
+cmake ..
+make -j$(nproc)
+👉 -j$(nproc) nutzt alle CPU-Kerne → schneller Build
 
+6️⃣ Miner starten
+./xmrig -o gulf.moneroocean.stream:10128 \
+-u WALLETADRESSE \
+-p MINERNAME
+Beispiel:
+
+./xmrig -o gulf.moneroocean.stream:10128 \
+-u 44t42kr2Zd3CUKuWszi1A3GxLtfZpm39NexjE4wBdM8YTaHL5mTJYxf1R9bfyvLZwLirCfDTTZ2oXWwuhrxxn86a2vVGNun \
+-p OfficePC01
